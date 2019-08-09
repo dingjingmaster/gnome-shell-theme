@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mac
+Comment=模仿mac的主题
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mac
+MetacityTheme=Mac
+ButtonLayout=close,minimize,maximize:menu

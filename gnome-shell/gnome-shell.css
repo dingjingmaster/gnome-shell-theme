@@ -1,6 +1,11 @@
-/* GLOBALS */
+/* 字体配置 */
+@font-face {
+  font-family: you-yuan;
+  src: url("assets/font/you-yuan.ttf");
+}
+/* 全局配置 */
 stage {
-  font-family: "M+ 1c", Roboto, Cantarell, Sans-Serif;
+  font-family: you-yuan, fantasy;
   font-size: 9.5pt;
   font-weight: 400;
   color: #ffffff;
@@ -701,18 +706,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing-columns: 1em;
 }
 
-/* Popovers/Menus */
+/* 弹出菜单栏最小宽度
+ * 比如：日历，时间，天气，顶栏打开的应用（顶栏除了系统按钮，其他）
+ */
 .popup-menu {
-  min-width: 200px;
+  min-width: 260px;
 }
 
 .popup-menu .popup-sub-menu {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 transparent;
 }
 
+/* 水平居中 */
 .popup-menu .popup-menu-content {
-  padding: 8px 0;
+  padding: auto 0;
 }
 
 .popup-menu .popup-menu-item {
@@ -997,6 +1005,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
   background-color: transparent;
 }
+
+/* logo 开始 */
+#panel #panelActivities.panel-button > * {
+  background-image: url("assets/logo-mac.svg");
+  background-position: center top;
+  width: 24px;
+  height: 24px;
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none;
+  color: transparent;
+}
+
+#panel #panelActivities.panel-button:active, #panel #panelActivities.panel-button:overview, #panel #panelActivities.panel-button:focus, #panel #panelActivities.panel-button:checked {
+  background-color: transparent;
+  border: none;
+}
+/* logo 结束 */
+
 
 #panel #panelLeft, #panel #panelCenter {
   spacing: 0;
@@ -3113,11 +3140,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Dash to Dock */
 #dashtodockContainer #dash {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 #dashtodockContainer:overview #dash {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #dashtodockContainer.extended:overview #dash {
@@ -3311,7 +3338,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Simple Dock */
 #dash:desktop {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 /* GPaste */
@@ -3336,7 +3363,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .search-entry .search-entry-icon {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
 }
 
 .popup-menu .search-entry:hover .search-entry-icon, .popup-menu .search-entry:focus .search-entry-icon {
