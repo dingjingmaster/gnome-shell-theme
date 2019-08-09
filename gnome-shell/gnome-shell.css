@@ -1,13 +1,13 @@
 /* 字体配置 */
 @font-face {
-  font-family: you-yuan;
+  font-family: you yuan;
   src: url("assets/font/you-yuan.ttf");
 }
 /* 全局配置 */
 stage {
-  font-family: you-yuan, fantasy;
-  font-size: 9.5pt;
-  font-weight: 400;
+  font-family: "you yuan", fantasy;
+  font-size: 9.9pt;
+  font-weight: 600;
   color: #ffffff;
 }
 
