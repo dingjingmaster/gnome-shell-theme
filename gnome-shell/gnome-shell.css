@@ -3,10 +3,11 @@
   font-family: you yuan;
   src: url("assets/font/you-yuan.ttf");
 }
+
 /* 全局配置 */
 stage {
   font-family: "you yuan", fantasy;
-  font-size: 9.9pt;
+  font-size: 9.6pt;
   font-weight: 600;
   color: #ffffff;
 }
