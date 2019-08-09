@@ -21,7 +21,7 @@ stage {
   border-radius: 6px;
   font-size: 10.5pt;
   font-weight: 500;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.8);
   background-color: transparent;
   border-color: transparent;
   box-shadow: 0 0 transparent;
@@ -74,7 +74,7 @@ stage {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
-  border-color: transparent;
+  /*border-color: transparent;*/
   box-shadow: 0 0 transparent;
   text-shadow: none;
   icon-shadow: none;
@@ -1004,11 +1004,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
+  /* 背景默认设置为透明 */
   background-color: transparent;
 }
 
 /* logo 开始 */
 #panel #panelActivities.panel-button > * {
+  /* logo 图片 */
   background-image: url("assets/logo-mac.svg");
   background-position: center top;
   width: 24px;
@@ -1024,7 +1026,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: none;
 }
 /* logo 结束 */
-
 
 #panel #panelLeft, #panel #panelCenter {
   spacing: 0;
@@ -1512,7 +1513,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* FIXME: how do you do this in sass? */
 .message-content *:hover > StIcon,
 .message-content *:focus > StIcon {
   color: #ffffff;
