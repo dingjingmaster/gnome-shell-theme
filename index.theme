@@ -6,5 +6,6 @@ Encoding=UTF-8
 
 [X-GNOME-Metatheme]
 GtkTheme=Mac
+IconTheme=Adwaita
 MetacityTheme=Mac
 ButtonLayout=close,minimize,maximize:menu

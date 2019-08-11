@@ -1,12 +1,12 @@
 /* 字体配置 */
 @font-face {
-  font-family: you yuan;
-  src: url("assets/font/you-yuan.ttf");
+  font-family: zhong yuan;
+  src: url("assets/font/zhong-yuan.ttf");
 }
 
 /* 全局配置 */
 stage {
-  font-family: "you yuan", fantasy;
+  font-family: "zhong yuan", fantasy;
   font-size: 9.6pt;
   font-weight: 600;
   color: #ffffff;
