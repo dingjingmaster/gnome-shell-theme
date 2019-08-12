@@ -1590,7 +1590,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #appMenu {
-  spinner-image: url("process-working.svg");
+  spinner-image: url("gnome-shell/process-working.svg");
   spacing: 4px;
 }
 
