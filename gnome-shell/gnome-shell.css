@@ -22,7 +22,7 @@ stage {
   font-size: 10.5pt;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
-  /*background-color: transparent;*/
+  background-color: transparent;
   border-color: transparent;
   box-shadow: 0 0 transparent;
   text-shadow: none;
@@ -56,9 +56,10 @@ stage {
   transition-duration: 200ms;
 }
 
+/* 输入框 */
 .button:insensitive {
   color: rgba(255, 255, 255, 0.8);
-  /*background-color: transparent;*/
+  background-color: transparent;
   border-color: transparent;
   box-shadow: 0 0 transparent;
   text-shadow: none;
